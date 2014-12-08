@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>Porownywarki_VM2</name>
+	<creationDate>10.09.2012</creationDate>
+    <author>Dodatkijoomla.pl</author>
+    <copyright>Copyright (c) 2014 DodatkiJoomla.pl</copyright>
+    <license>GNU/GPL v2</license>
+    <authorEmail>kontakt@dodatkijoomla.pl</authorEmail>
+    <authorUrl>http://dodatkijoomla.pl</authorUrl>
+	<version>1.0.1</version>
+	<description>Komponent do obsługi różnych porównywarek cenowych dla Virtuemart 2.</description>
+	<files folder="site">
+		<filename>porownywarki_vm2.php</filename>
+	</files>
+	<administration>
+		<!-- Wpisy menu -->
+		<menu img="components/com_porownywarki_vm2/dodatki_joomla_pl_icon.png">COM_POROWNYWARKI_VM2</menu>
+		
+		<languages folder="lang">
+			<language tag="en-GB">en-GB.com_porownywarki_vm2.sys.ini</language>
+			<language tag="pl-PL">pl-PL.com_porownywarki_vm2.sys.ini</language>
+		 </languages>
+
+		<!-- Pliki główne -->
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>porownywarki_vm2.php</filename>
+			<folder>assets</folder>
+			<folder>classes</folder>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+
+    <!-- serwer aktualizacji -->
+    <updateservers>
+        <server type="extension" name="Aktualizacje Dodatkijoomla.pl">http://dodatkijoomla.pl/updates/xml/porownywarki_update.xml</server>
+    </updateservers>
+</extension>
